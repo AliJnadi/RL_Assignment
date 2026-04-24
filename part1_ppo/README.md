@@ -86,38 +86,20 @@ Final models are saved in:
 Each model is accompanied by a vecnorm_seed_<seed>.pkl file containing running statistics for observation normalisation.
 
 ## Demonstrations (GIFs)
-Evaluation produces GIFs for each seed. The gollowing show performance of all models:
-
-<p>
-  <img src="[PPO sparse](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/sparse/seed_0.gif)" width="32%" />
-  <img src="[PPO dense](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/dense/seed_0.gif)" width="32%" />
-  <img src="[SAC dense](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/SAC/dense/seed_2.gif)" width="32%" />
-</p>
+Evaluation produces GIFs for each seed. The following show performance of all models:
 
 ### PPO sparse
+![PPO sparse](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/sparse/seed_0.gif)
 
 ### PPO dense
+![PPO dense](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/dense/seed_0.gif)
 
 ### SAC dense
+![SAC dense](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/SAC/dense/seed_2.gif)
 
-Learning Curves & Analysis
-All learning curves (episodic reward, success rate vs timesteps) are included in report_part1.pdf (submitted separately).
-The report also contains:
+## Notes on Reproducibility
+* All random number generators are seeded at the start of each training run (via Stable‑Baselines3 seed argument and environment reset(seed=...)).
 
-Comparison of sparse vs dense reward for PPO
+* The evaluation script does not call any set_seed() function – this ensures the reported success rates reflect real‑world performance across varied initial conditions.
 
-Comparison of PPO (sparse) vs SAC (dense)
-
-Latency observations and discussion
-
-Notes on Reproducibility
-All random number generators are seeded at the start of each training run (via Stable‑Baselines3 seed argument and environment reset(seed=...)).
-
-The evaluation script does not call any set_seed() function – this ensures the reported success rates reflect real‑world performance across varied initial conditions.
-
-The exact environment wrapper (RewardWrapperSparse / RewardWrapperDense) is provided in RewardWrapper.py.
-
-Additional Files
-report_part1.pdf – required plots and analysis (submitted together with this folder)
-
-requirements.txt – pin all package versions for exact reproduction
+* The exact environment wrapper (RewardWrapperSparse / RewardWrapperDense) is provided in RewardWrapper.py.
