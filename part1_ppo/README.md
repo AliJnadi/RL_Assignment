@@ -137,15 +137,6 @@ Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) perfo
   <sub>Off‑policy SAC with dense reward achieves highest success rate</sub>
 </div>
 
-### PPO sparse
-![PPO sparse](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/sparse/seed_0.gif)
-
-### PPO dense
-![PPO dense](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/dense/seed_0.gif)
-
-### SAC dense
-![SAC dense](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/SAC/dense/seed_2.gif)
-
 ## Notes on Reproducibility
 * All random number generators are seeded at the start of each training run (via Stable‑Baselines3 seed argument and environment reset(seed=...)).
 
