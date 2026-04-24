@@ -126,7 +126,7 @@ Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) perfo
 <div align="center">
   <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/dense/seed_0.gif" width="500"/>
   <br/>
-  <sub>Smoother behaviour due to dense reward shaping</sub>
+  <sub>Better behaviour due to dense reward shaping, the model is under trained</sub>
 </div>
 
 ### SAC dense
