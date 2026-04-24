@@ -116,7 +116,7 @@ Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) perfo
 ### PPO sparse
 
 <div align="center">
-  <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/sparse/seed_0.gif" width="500"/>
+  <img src="https://raw.githubusercontent.com/AliJnadi/RL_Assignment/main/part1_ppo/gifs/PPO/sparse/seed_0.gif" width="500"/>
   <br/>
   <sub>Fetch robot picking and placing the cube (sparse reward)</sub>
 </div>
@@ -124,7 +124,7 @@ Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) perfo
 ### PPO dense
 
 <div align="center">
-  <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/dense/seed_0.gif" width="500"/>
+  <img src="https://raw.githubusercontent.com/AliJnadi/RL_Assignment/main/part1_ppo/gifs/PPO/dense/seed_0.gif" width="500"/>
   <br/>
   <sub>Better behaviour due to dense reward shaping, the model is under trained</sub>
 </div>
@@ -132,7 +132,7 @@ Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) perfo
 ### SAC dense
 
 <div align="center">
-  <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/SAC/dense/seed_2.gif" width="500"/>
+  <img src="https://raw.githubusercontent.com/AliJnadi/RL_Assignment/main/part1_ppo/gifs/SAC/dense/seed_2.gif" width="500"/>
   <br/>
   <sub>Off‑policy SAC with dense reward achieves highest success rate</sub>
 </div>
