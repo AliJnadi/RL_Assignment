@@ -20,10 +20,11 @@ All [models](https://github.com/AliJnadi/RL_Assignment/tree/main/part1_ppo/train
 
 ## Environment & Dependencies
 
-Install dependencies:
+You can use conda to create the environment:
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate gym_robo
 ```
 
 ## Training
