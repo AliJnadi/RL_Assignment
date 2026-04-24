@@ -3,6 +3,13 @@
 ## Overview
 
 This folder contains the [training](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/train.py) and [evaluation](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/eval.py) code for the [FetchPickAndPlace](https://robotics.farama.org/envs/fetch/pick_and_place/) task (MuJoCo).  
+
+The `FetchPickAndPlace-v4` environment simulates a 7‑DoF Fetch robot in MuJoCo.  
+**Task**: The robot must grasp a small cube from a table, lift it to a target height (0.5 m above the table), the episode never terminated only trancated after 50 steps.  
+**Observation**: 25‑dimensional vector (end‑effector pose, object pose, gripper state, relative positions, etc.).  
+**Action**: 4‑dimensional continuous (x, y, z displacement + gripper open/close).  
+**Reward**: Sparse (binary success + small proximity) or dense (shaped distance‑to‑goal).
+
 We provide two algorithms:
 
 - **PPO** (on‑policy) with sparse and dense reward wrappers.
@@ -87,6 +94,48 @@ Each model is accompanied by a vecnorm_seed_<seed>.pkl file containing running s
 
 ## Demonstrations (GIFs)
 Evaluation produces GIFs for each seed. The following show performance of all models:
+
+## Environment: FetchPickAndPlace (MuJoCo)
+
+The `FetchPickAndPlace-v4` environment simulates a 7‑DoF Fetch robot in MuJoCo.  
+**Task**: The robot must grasp a small cube from a table, lift it to a target height (0.5 m above the table), and release it.  
+**Observation**: 25‑dimensional vector (end‑effector pose, object pose, gripper state, relative positions, etc.).  
+**Action**: 4‑dimensional continuous (x, y, z displacement + gripper open/close).  
+**Reward**: Sparse (binary success + small proximity) or dense (shaped distance‑to‑goal).
+
+We trained three policies:
+
+- **PPO with sparse reward**
+- **PPO with dense reward**
+- **SAC with dense reward**
+
+Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) performing the task successfully.
+
+---
+
+### PPO sparse
+
+<div align="center">
+  <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/sparse/seed_0.gif" width="500"/>
+  <br/>
+  <sub>Fetch robot picking and placing the cube (sparse reward)</sub>
+</div>
+
+### PPO dense
+
+<div align="center">
+  <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/dense/seed_0.gif" width="500"/>
+  <br/>
+  <sub>Smoother behaviour due to dense reward shaping</sub>
+</div>
+
+### SAC dense
+
+<div align="center">
+  <img src="https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/SAC/dense/seed_2.gif" width="500"/>
+  <br/>
+  <sub>Off‑policy SAC with dense reward achieves highest success rate</sub>
+</div>
 
 ### PPO sparse
 ![PPO sparse](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/gifs/PPO/sparse/seed_0.gif)
