@@ -44,7 +44,7 @@ python train.py --algo PPO --mode dense --seeds 0 1 2 --timesteps 6000000 --n_en
 3. SAC with dense reward (800k steps, 1 env)
 
 ```bash
-python train.py --algo SAC --mode dense --seeds 0 --timesteps 800000 --n_envs 1
+python train.py --algo SAC --mode dense --seeds 0 1 2 --timesteps 800000 --n_envs 1
 ```
 
 All hyperparameters (learning rates, network architectures, etc.) are hard‑coded inside train.py.
@@ -102,4 +102,4 @@ Evaluation produces GIFs for each seed. The following show performance of all mo
 
 * The evaluation script does not call any set_seed() function – this ensures the reported success rates reflect real‑world performance across varied initial conditions.
 
-* The exact environment wrapper (RewardWrapperSparse / RewardWrapperDense) is provided in RewardWrapper.py.
+* The exact environment wrapper (RewardWrapperSparse / RewardWrapperDense) is provided in [RewardWrapper.py](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/RewardWrapper.py).
