@@ -28,7 +28,7 @@ source install/setup.bash
 ### Launch the System
 
 ```bash
-ros2 launch your_ros2_package sim_policy.launch.py
+ros2 launch rl_control env_control_rqt.launch.py
 ```
 
 This will:
