@@ -60,11 +60,4 @@ ros2 bag info bags/successful_run
 (Extract the compressed archives before playing, if needed.)
 
 ## Video Demonstration
-This [video](https://raw.githubusercontent.com/AliJnadi/RL_Assignment/main/part2_ros/video/ScreenRecording.mov) shows the robot executing the pick‑and‑place task under ROS2 closed‑loop control.
-
-<video src="https://raw.githubusercontent.com/AliJnadi/RL_Assignment/main/part2_ros/video/ScreenRecording.mp4" controls></video>
-
-<video width="640" height="360" controls>
-  <source src="https://raw.githubusercontent.com/AliJnadi/RL_Assignment/main/part2_ros/video/ScreenRecording.mov" type="video/mov">
-  Your browser does not support the video tag.
-</video>
+This [video](https://drive.google.com/file/d/1MDHYq4jgeMeD8rWBoQ4-R60_GDaYwB-e/view?usp=sharing) shows the robot executing the pick‑and‑place task under ROS2 closed‑loop control.
