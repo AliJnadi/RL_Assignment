@@ -30,12 +30,13 @@ conda activate gym_robo
 ## Training
 All training commands use [train.py](https://github.com/AliJnadi/RL_Assignment/blob/main/part1_ppo/train.py). The script accepts the following arguments:
 
-Argument	Description	Default
---algo	PPO or SAC	PPO
---mode	sparse or dense	sparse
---seeds	list of random seeds	0 1 2
---timesteps	total timesteps per seed	6000000 (PPO), 800000 (SAC)
---n_envs	number of parallel envs	2 (PPO), 1 (SAC)
+| Argument   | Description                   | Default                              |
+|------------|-------------------------------|--------------------------------------|
+| --algo     | PPO or SAC                    | PPO                                  |
+| --mode     | sparse or dense               | sparse                               |
+| --seeds    | list of random seeds          | 0 1 2                                |
+| --timesteps| total timesteps per seed      | 6_000_000 (PPO), 800_000 (SAC)       |
+| --n_envs   | number of parallel envs       | 2 (PPO), 1 (SAC)                     |
 
 1. PPO with sparse reward (6M steps, 2 envs)
 
@@ -87,22 +88,14 @@ The script will:
 
 ## Saved Policy Checkpoints
 Final models are saved in:
-* PPO_models/sparse/PickPlace_seed_<seed>.zip
-* PPO_models/dense/PickPlace_seed_<seed>.zip
-* SAC_models/dense/PickPlace_seed_<seed>.zip
+* PPO_models/sparse/PickPlace_seed_X.zip
+* PPO_models/dense/PickPlace_seed_X.zip
+* SAC_models/dense/PickPlace_seed_X.zip
 
-Each model is accompanied by a vecnorm_seed_<seed>.pkl file containing running statistics for observation normalisation.
+Each model is accompanied by a vecnorm_seed_X.pkl file containing running statistics for observation normalisation. X is the correspondings seed.
 
-## Demonstrations (GIFs)
+## Demonstrations
 Evaluation produces GIFs for each seed. The following show performance of all models:
-
-## Environment: FetchPickAndPlace (MuJoCo)
-
-The `FetchPickAndPlace-v4` environment simulates a 7‑DoF Fetch robot in MuJoCo.  
-**Task**: The robot must grasp a small cube from a table, lift it to a target height (0.5 m above the table), and release it.  
-**Observation**: 25‑dimensional vector (end‑effector pose, object pose, gripper state, relative positions, etc.).  
-**Action**: 4‑dimensional continuous (x, y, z displacement + gripper open/close).  
-**Reward**: Sparse (binary success + small proximity) or dense (shaped distance‑to‑goal).
 
 We trained three policies:
 
@@ -110,7 +103,7 @@ We trained three policies:
 - **PPO with dense reward**
 - **SAC with dense reward**
 
-Below are GIFs of the best final policies (seed 0 for PPO, seed 2 for SAC) performing the task successfully.
+Below are GIFs of the best final policies performing the task successfully.
 
 ---
 
