@@ -50,12 +50,12 @@ We provide two compressed [rosbag](https://github.com/AliJnadi/RL_Assignment/tre
 To replay a bag and inspect messages:
 
 ```bash
-ros2 bag play bags/successful_run
+ros2 bag play logs/bags/successful_run
 ```
 To view the bag info:
 
 ```bash
-ros2 bag info bags/successful_run
+ros2 bag info logs/bags/successful_run
 ```
 (Extract the compressed archives before playing, if needed.)
 
