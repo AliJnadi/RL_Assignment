@@ -15,5 +15,5 @@ This repository contains the implementation and evaluation of two related tasks:
 
 Clone the repository:
 ```bash
-git clone https://github.com
+git clone https://github.com/AliJnadi/RL_Assignment.git
 ```
