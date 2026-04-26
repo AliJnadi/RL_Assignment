@@ -10,3 +10,10 @@ This repository contains the implementation and evaluation of two related tasks:
 2. **[Part 2](https://github.com/AliJnadi/RL_Assignment/tree/main/part2_ros) – ROS2 Fallback**  
    A ROS2‑based closed‑loop control system that drives the same simulator.  
    Implements step‑numbered observation/action matching to avoid stale actions.
+
+## Installation
+
+Clone the repository:
+```bash
+git clone https://github.com
+```
