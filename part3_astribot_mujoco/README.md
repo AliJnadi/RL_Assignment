@@ -62,9 +62,9 @@ The joint command function is `control_actuator(joint_name, command)` from the `
 
 The function automatically respects the joint limits defined in the same `config.yaml` file.
 
-## Configuration File (`config.yaml`)
+## Configuration File
 
-The `[config.yaml](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/config.yaml)` file serves as the central configuration hub for the simulation.
+The [`config.yaml`](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/config.yaml) file serves as the central configuration hub for the simulation.
 
 ### Key Configuration Sections
 
