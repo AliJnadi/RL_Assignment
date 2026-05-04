@@ -1,0 +1,3 @@
+[submodule "part3_astribot_mujoco/astribot_descriptions"]
+	path = part3_astribot_mujoco/astribot_descriptions
+	url = https://github.com/Astribot-Dev/astribot_descriptions
