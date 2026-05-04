@@ -70,6 +70,7 @@ The `[config.yaml](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_ast
 
 | Section | Description |
 |---------|-------------|
+|`model_path` | Path to model xml file|
 | `robot_list` | Defines all robot body parts |
 | `joint_names_list` | Complete list of controllable joints |
 | `joint_names_group` | Groups joints by functional body part |
