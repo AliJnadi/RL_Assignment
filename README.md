@@ -11,6 +11,9 @@ This repository contains the implementation and evaluation of two related tasks:
    A ROS2‑based closed‑loop control system that drives the same simulator.  
    Implements step‑numbered observation/action matching to avoid stale actions.
 
+3. **[Part 3](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco) – Astribot Mujoco**  
+   This part is adapted from this [repository](https://github.com/Astribot-Dev/astribot_descriptions). It includes a short demonstration showing how to control the joints of the Astribot robot, along with examples of common errors and their solutions.
+
 ## Installation
 
 Clone the repository:
