@@ -1,0 +1,137 @@
+    simulator_type: "Mujoco"
+    robot_name: astribot_whole_body
+    model_path: "astribot_s1_with_gripper.xml"
+    robot_list: [
+        "astribot_chassis",
+        "astribot_torso",
+        "astribot_head",
+        "astribot_arm_left",
+        "astribot_gripper_left",
+        "astribot_arm_right",
+        "astribot_gripper_right",
+    ]
+    joint_names_list: [
+        "astribot_chassis_x",
+        "astribot_chassis_y",
+        "astribot_chassis_zrot",
+        "astribot_torso_joint_1",
+        "astribot_torso_joint_2",
+        "astribot_torso_joint_3",
+        "astribot_torso_joint_4",
+        "astribot_head_joint_1",
+        "astribot_head_joint_2",
+        "astribot_arm_left_joint_1",
+        "astribot_arm_left_joint_2",
+        "astribot_arm_left_joint_3",
+        "astribot_arm_left_joint_4",
+        "astribot_arm_left_joint_5",
+        "astribot_arm_left_joint_6",
+        "astribot_arm_left_joint_7",
+        'astribot_gripper_left_joint_L1',
+        "astribot_arm_right_joint_1",
+        "astribot_arm_right_joint_2",
+        "astribot_arm_right_joint_3",
+        "astribot_arm_right_joint_4",
+        "astribot_arm_right_joint_5",
+        "astribot_arm_right_joint_6",
+        "astribot_arm_right_joint_7",
+        'astribot_gripper_right_joint_L1',
+    ]
+
+    gravity_compensation: True
+    mode: "human"
+    width: 640
+    height: 360
+    object_names: [] 
+    camera: 'close'
+    sensor_names: []
+    vel_compensation_list: [False, True, True, True, True, True, True]
+
+    joint_names_group: 
+        "astribot_chassis":   ["astribot_chassis_x", "astribot_chassis_y", "astribot_chassis_zrot"]
+        "astribot_torso":     ["astribot_torso_joint_1", "astribot_torso_joint_2", "astribot_torso_joint_3", "astribot_torso_joint_4"]
+        "astribot_head":      ["astribot_head_joint_1", "astribot_head_joint_2"]
+        "astribot_arm_left":  ["astribot_arm_left_joint_1", "astribot_arm_left_joint_2", "astribot_arm_left_joint_3", "astribot_arm_left_joint_4", "astribot_arm_left_joint_5", "astribot_arm_left_joint_6", "astribot_arm_left_joint_7"]
+        "astribot_arm_right": ["astribot_arm_right_joint_1", "astribot_arm_right_joint_2", "astribot_arm_right_joint_3", "astribot_arm_right_joint_4", "astribot_arm_right_joint_5", "astribot_arm_right_joint_6", "astribot_arm_right_joint_7"]
+        "astribot_gripper":   ["astribot_gripper_left_joint_L1", "astribot_gripper_right_joint_L1"]
+
+    actuators:
+        astribot_chassis_x:
+            id: 0
+            limits: [-5000.0, 5000.0]
+        astribot_chassis_y:
+            id: 1
+            limits: [-5000.0, 5000.0]
+        astribot_chassis_zrot:  
+            id: 2
+            limits: [-5000.0, 5000.0]
+        
+        astribot_torso_joint_1: 
+            id: 3
+            limits: [0.0, 3.15]
+        astribot_torso_joint_2: 
+            id: 4
+            limits: [-3.14, 3.15]
+        astribot_torso_joint_3:
+            id: 5 
+            limits: [0.0, 3.15]
+        astribot_torso_joint_4:
+            id: 6 
+            limits: [-3.14, 3.15]
+        astribot_head_joint_1:
+            id: 7  
+            limits: [-2.36, 2.36]
+        astribot_head_joint_2:
+            id: 8  
+            limits: [-1.3, 1.3]
+  
+        astribot_arm_left_joint_1:
+            id: 9  
+            limits: [-6.2831, 6.2831]
+        astribot_arm_left_joint_2:
+            id: 10 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_left_joint_3:
+            id: 11 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_left_joint_4:
+            id: 12 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_left_joint_5:
+            id: 13 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_left_joint_6:
+            id: 14 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_left_joint_7:
+            id: 15 
+            limits: [-6.2831, 6.2831]
+
+        astribot_arm_right_joint_1:
+            id: 17 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_right_joint_2:
+            id: 18 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_right_joint_3:
+            id: 19 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_right_joint_4:
+            id: 20 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_right_joint_5:
+            id: 21 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_right_joint_6:
+            id: 22 
+            limits: [-6.2831, 6.2831]
+        astribot_arm_right_joint_7:
+            id: 23 
+            limits: [-6.2831, 6.2831]
+        
+        astribot_gripper_left_joint_L1:
+            id: 16
+            limits: [0.0, 100.0]
+        astribot_gripper_right_joint_L1:
+            id: 24
+            limits: [0.0, 100.0]
