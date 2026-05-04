@@ -17,9 +17,15 @@ cd part3_astribot_mujuco/astribot_descriptions
 3. Download the actual mesh files:
 ```bash
 git lfs pull  
+cd ..
 ```
 
-4. Run `main.py`:
+4. Download required modules
+```bash
+pip install -r requirements.txt
+```
+
+5. Run `main.py`:
    - **Non-macOS systems:**
      ```bash 
      python3 main.py config.yaml
