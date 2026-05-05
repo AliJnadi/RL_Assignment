@@ -42,7 +42,7 @@ pip install -r requirements.txt
     ```bash
     Error: "at least 4 vertices required"
     ```
-- **Solution:** Run `git lfs pull` to download the actual mesh [files](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj) (approximately 33MB each). Alternatively, download and manually add them to the `astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj` folder.
+- **Solution:** Run `git lfs pull` to download the actual mesh [files](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj) (approximately 33MB each). Alternatively, manually download and add them to the `astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj` folder.
 
 ### 2. Viewer Compatibility (macOS)
 - On macOS, the code must be executed using `mjpython`, which is automatically installed with MuJoCo.
