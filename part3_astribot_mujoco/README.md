@@ -14,13 +14,7 @@ git clone https://github.com/AliJnadi/RL_Assignment
 cd part3_astribot_mujuco/astribot_descriptions
 ```
 
-3. Download the actual mesh files:
-```bash
-git lfs pull  
-cd ..
-```
-
-4. Download required modules
+3. Download required modules
 ```bash
 pip install -r requirements.txt
 ```
@@ -42,7 +36,7 @@ pip install -r requirements.txt
     ```bash
     Error: "at least 4 vertices required"
     ```
-- **Solution:** Run `git lfs pull` to download the actual mesh [files](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj) (approximately 33MB each). Alternatively, manually download and add them to the `astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj` folder.
+- **Solution:** Run [`git lfs pull`](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) to download the actual mesh [files](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj) (approximately 33MB each). Alternatively, manually download and add them to the `astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj` folder.
 
 ### 2. Viewer Compatibility (macOS)
 - On macOS, the code must be executed using `mjpython`, which is automatically installed with MuJoCo.
@@ -51,7 +45,7 @@ pip install -r requirements.txt
 - You are using the original repository. In this repo, the XML files have been modified to include collision geometries while preserving the graphical resolution in the simulator.
 
 ### 4. Changing joint limits
-If you want to add or change **joint limits**, edit the [`config.yaml`](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/config.yaml) file.  
+- If you want to add or change **joint limits**, edit the [`config.yaml`](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/config.yaml) file.  
 Navigate to:
 
 ```yaml
@@ -62,7 +56,7 @@ actuators:
 ```
 
 ### 5. Modify collosions geometry
-If you want to modify **collision geometries**, look for lines like the following in the XML files.  
+- If you want to modify **collision geometries**, look for lines like the following in the XML files.  
 Start from the [main XML file](https://github.com/AliJnadi/RL_Assignment/blob/main/part3_astribot_mujoco/astribot_descriptions/mjcf/astribot_s1_mjcf/astribot_s1_with_gripper.xml) and follow the includes.
 
 Example line to change:
