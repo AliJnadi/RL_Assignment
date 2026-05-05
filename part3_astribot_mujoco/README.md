@@ -100,4 +100,4 @@ The [`config.yaml`](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_as
 | `camera` | Preset camera position (`'close'`, `'far'`, etc.) |
 
 ## Demonstrations
-<img width="960" height="663" alt="viewer" src="https://github.com/user-attachments/assets/7ef272dc-3cbd-44ef-afed-9403c6833e68" />
+<img width="960" height="663" alt="viewer" src="gif/viewer.gif" />
