@@ -50,6 +50,29 @@ pip install -r requirements.txt
 ### 3. Collision seems not to be working
 - You are using the original repository. In this repo, the XML files have been modified to include collision geometries while preserving the graphical resolution in the simulator.
 
+### 4. Changing joint limits
+If you want to add or change **joint limits**, edit the [`config.yaml`](https://github.com/AliJnadi/RL_Assignment/tree/main/part3_astribot_mujoco/config.yaml) file.  
+Navigate to:
+
+```yaml
+actuators:
+  name: <actuator_name>
+  id: joint_id
+  limits: [lower_limit, upper_limit]
+```
+
+### 5. Modify collosions geometry
+If you want to modify **collision geometries**, look for lines like the following in the XML files.  
+Start from the [main XML file](https://github.com/AliJnadi/RL_Assignment/blob/main/part3_astribot_mujoco/astribot_descriptions/mjcf/astribot_s1_mjcf/astribot_s1_with_gripper.xml) and follow the includes.
+
+Example line to change:
+
+```xml
+<geom pos="-0.18 0.01 0" euler="0 1.57 0" type="cylinder" size="0.09 0.175" group="1" rgba="0 0 0 0" contype="1" conaffinity="1"/>
+```
+
+Adjust `pos`, `size`, `radius` (for spheres) or half‑length (second value in `size` for cylinders) as needed.
+
 ## Controlling the Robot
 
 The joint command function is `control_actuator(joint_name, command)` from the `Robot` class, where:
