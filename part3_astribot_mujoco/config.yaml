@@ -1,6 +1,6 @@
     simulator_type: "Mujoco"
     robot_name: astribot_whole_body
-    model_path: "astribot_s1_with_gripper.xml"
+    model_path: "astribot_descriptions/mjcf/astribot_s1_mjcf/astribot_s1_with_gripper.xml"
     robot_list: [
         "astribot_chassis",
         "astribot_torso",
@@ -37,6 +37,15 @@
         "astribot_arm_right_joint_7",
         'astribot_gripper_right_joint_L1',
     ]
+
+    gravity_compensation: True
+    mode: "human"
+    width: 640
+    height: 360
+    object_names: [] 
+    camera: 'close'
+    sensor_names: []
+    vel_compensation_list: [False, True, True, True, True, True, True]
 
     joint_names_group: 
         "astribot_chassis":   ["astribot_chassis_x", "astribot_chassis_y", "astribot_chassis_zrot"]
@@ -126,8 +135,3 @@
         astribot_gripper_right_joint_L1:
             id: 24
             limits: [0.0, 100.0]
-
-    mode: "human"
-    width: 640
-    height: 360
-    camera: 'close'
