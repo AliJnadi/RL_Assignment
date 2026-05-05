@@ -48,9 +48,9 @@ def launch_viewer(robot):
         
         # Set initial camera
         v.cam.type = mujoco.mjtCamera.mjCAMERA_FREE
-        v.cam.distance = 5.0
-        v.cam.azimuth = 45
-        v.cam.elevation = -20
+        v.cam.distance = 6.0
+        v.cam.azimuth = 80
+        v.cam.elevation = -40
 
         def make_trajectory(a, b, num):
             forward = np.linspace(a, b, num)
