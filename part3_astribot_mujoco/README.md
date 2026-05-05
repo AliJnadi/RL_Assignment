@@ -37,22 +37,18 @@ pip install -r requirements.txt
 
 ## Issues Encountered & Solutions
 
-### 1. Relative Path Resolution
-- **Problem:** The MJCF file referenced meshes using relative paths, which caused failures when executed from different directories.
-- **Solution:** Changed the working directory to the MJCF file location before loading:
-    ```python
-    os.chdir('astribot_descriptions/mjcf/astribot_s1_mjcf')
-    ```
-
-### 2. Git LFS Pointer Files
+### 1. Git LFS Pointer Files
 - **Problem:** Mesh files consisted of Git LFS pointers rather than actual 3D data, triggering the error:
     ```bash
     Error: "at least 4 vertices required"
     ```
 - **Solution:** Ran `git lfs pull` to download the actual mesh files (approximately 33MB each). Alternatively, download and manually add them to the `astribot_descriptions/urdf/astribot_s1_urdf/meshes/obj` folder.
 
-### 3. Viewer Compatibility (macOS)
+### 2. Viewer Compatibility (macOS)
 - On macOS, the code must be executed using `mjpython`, which is automatically installed with MuJoCo.
+
+### 3. Collision seems not to be working
+- You are using the original repository. In this repo, the XML files have been modified to include collision geometries while preserving the graphical resolution in the simulator.
 
 ## Controlling the Robot
 
